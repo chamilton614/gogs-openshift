@@ -19,8 +19,7 @@ ENV HOME=/var/lib/gogs
 
 COPY ./root /
 
-RUN curl -L -o /etc/yum.repos.d/gogs.repo && \
-    https://dl.packager.io/srv/gogs/gogs/master/installer/el/7.repo && \
+RUN curl -L -o /etc/yum.repos.d/gogs.repo https://dl.packager.io/srv/gogs/gogs/master/installer/el/7.repo && \
     #https://dl.packager.io/srv/pkgr/gogs/pkgr/installer/el/7.repo && \
     rpm --import https://rpm.packager.io/key && \
     yum -y install epel-release && \
