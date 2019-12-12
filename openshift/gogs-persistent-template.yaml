@@ -343,7 +343,7 @@ parameters:
   value: "9.5"
 - name: GOGS_VERSION
   displayName: Gogs Version
-  description: 'Version of the Gogs container image to be used (check the available version https://hub.docker.com/r/openshiftdemos/gogs/tags)'
+  description: 'Version of the Gogs container image to be used (check the available version https://hub.docker.com/r/chamilton614/gogs-openshift/tags)'
   value: "0.11.91"
   required: true
 - name: INSTALL_LOCK
